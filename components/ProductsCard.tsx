@@ -6,7 +6,7 @@ interface propsType {
     img: string;
     title: string;
     desc: string;
-    rating: Number;
+    rating: number;
     price: string;
 }
 
@@ -19,7 +19,7 @@ const ProductsCard: React.FC <propsType> = ({
 }) => {
 
 
-const generateRating = (rating: Number) =>{
+const generateRating = (rating: number) =>{
     switch (rating){
         case 1:
             return(

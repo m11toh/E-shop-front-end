@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 import { BiUser } from 'react-icons/bi'
 import { BsSearch } from 'react-icons/bs'
@@ -12,14 +13,20 @@ function HeaderMain() {
     <div className='border-b border-gray-200 py-2'>
         <div className='container sm:flex justify-between items-center'>
           <div className='font-bold text-4xl text-center pb-4 sm:pb-0 text-black'>
-            <img src="/Logo.png" alt="Logo" className="h-35  w-auto" />
+              <Image
+                src="/Logo.png"
+                alt="Logo"
+                width={100}
+                height={100}
+              />
           </div>
 
           <div className='w-full sm:w-[300px] md:w-[70%] relative'>
             <input 
               type="text"
               className='border-gray-200 border p-2 px-4 rounded-lg w-full' 
-              placeholder='Enter Product Name....'/>
+              placeholder='Enter Product Name....'
+            />
 
             <BsSearch className='absolute right-0 top-0 mr-3 mt-3 text-gray-400' size={20} />
 

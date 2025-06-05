@@ -6,7 +6,7 @@ import Slide from './Slide';
 
 function Hero() {
 
-    var settings = {
+    let settings = {
         dots: true,
         infinite: true,
         slidesToShow: 1,
